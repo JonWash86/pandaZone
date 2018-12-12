@@ -1,0 +1,11 @@
+body {
+  text-align: center;
+}
+
+#pandaButton {
+  border: none;
+  background-color: brown;
+  font-size: 32px;
+  color: red;
+  border-radius: 25px;
+}

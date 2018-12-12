@@ -13,6 +13,9 @@ function onYouTubeIframeAPIReady(){
     height:'390',
     width:'640',
     videoId:'iVXtm-S2GbI',
+    playervars: {
+      'autoplay': 1
+    },
     events:{
       'onReady': onPlayerReady,
       'onStateChange': onPlayerStateChange
