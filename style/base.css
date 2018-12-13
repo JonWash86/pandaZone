@@ -1,5 +1,6 @@
 body {
   text-align: center;
+  background-color: #6BB3BC;
 }
 
 #pandaButton {
@@ -8,4 +9,27 @@ body {
   font-size: 32px;
   color: white;
   border-radius: 25px;
+}
+
+#wrapper {
+  /* display: inline-block; */
+  position: relative;
+}
+
+#underlay{
+  position: absolute;
+  background-color: #28536B;
+  height: 440px;
+  width: 690px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  z-index: -1;
+  border-radius: 25px;
+}
+
+#player {
 }

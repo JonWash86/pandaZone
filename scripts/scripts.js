@@ -3,6 +3,9 @@ $("#pandaButton").on('click', function() {
   player.loadVideoById('3esjoo4NoGQ')
 })
 
+var serveRandom = function(){
+
+}
 
 var tag = document.createElement('script');
 tag.src = "https://www.youtube.com/iframe_api";
