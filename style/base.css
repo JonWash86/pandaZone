@@ -1,14 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Copse|Roboto');
+
 body {
   text-align: center;
-  background-color: #6BB3BC;
+  background-color: #8BC4B8;
+}
+
+h1{
+  font-family: 'Copse', serif;
+  font-size: 48px;
 }
 
 #pandaButton {
   border: none;
-  background-color: brown;
+  background-color: #DDE392;
   font-size: 32px;
-  color: white;
+  color: #3A1712;
   border-radius: 25px;
+  font-family: 'Copse', serif;
 }
 
 #wrapper {
@@ -18,7 +26,7 @@ body {
 
 #underlay{
   position: absolute;
-  background-color: #28536B;
+  background-color: white;
   height: 440px;
   width: 690px;
   margin-left: auto;

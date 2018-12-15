@@ -43,3 +43,17 @@ function onPlayerStateChange(event){
 function stopVideo(){
   player.stopVideo();
 }
+
+
+function shuffle(array){
+  var index = array.length, t, i;
+  while(index){
+    i = Math.floor(Math.random() * index--);
+    t = array[index];
+    array[index] = array[i];
+    array[i] = t;
+  }
+  return array;
+}
+
+shuffle(allIds);
