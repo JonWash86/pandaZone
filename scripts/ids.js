@@ -2,21 +2,19 @@ function pandaId(rawDataObj){
   this.id = rawDataObj.id;
 };
 
-var allIds = [];
+pandaId.all = [];
 
 pandaId.loadAll = function(rawData) {
-  rawData.sort(function(a,b) {
-    return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
-  });
-
+  console.log('hi!')
+  console.log(rawData);
   rawData.forEach(function(ele) {
-    Article.all.push(new Article(ele));
+    pandaId.all.push(new pandaId(ele));
   })
-}
+};
 
 
 pandaId.fetchAll = function(){
+  console.log('helo1')
   $.get('data/pandaBase.json',
   pandaId.loadAll);
-
-}
+};

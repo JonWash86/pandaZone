@@ -1,11 +1,9 @@
+var clicks = 0;
 
 $("#pandaButton").on('click', function() {
-  player.loadVideoById('3esjoo4NoGQ')
+    player.loadVideoById(pandaId.all[clicks].id);
+    (clicks++);
 })
-
-var serveRandom = function(){
-
-}
 
 var tag = document.createElement('script');
 tag.src = "https://www.youtube.com/iframe_api";
@@ -44,7 +42,6 @@ function stopVideo(){
   player.stopVideo();
 }
 
-
 function shuffle(array){
   var index = array.length, t, i;
   while(index){
@@ -56,4 +53,7 @@ function shuffle(array){
   return array;
 }
 
-shuffle(allIds);
+function initPage(){
+  pandaId.fetchAll();
+  shuffle(allIds);
+}

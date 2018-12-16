@@ -1,14 +1,11 @@
 [
   {
-    "url":"https://www.youtube.com/watch?v=HcMFJ4txdzQ",
-    "title":"Red Panda Encounters Stone"
+    "id":"HcMFJ4txdzQ"
   },
   {
-    "url":"https://www.youtube.com/watch?v=YzVwrvbz_XA",
-    "title":"Red Pandas are Obsessed with Apple"
+    "id":"YzVwrvbz_XA"
   },
   {
-    "url":"https://www.youtube.com/watch?v=ZipGq3So7PY",
-    "title":"Bittersweet Rescue of Red Pandas from Wildlife Smugglers | National Geographic"
-  },
+    "id":"ZipGq3So7PY"
+  }
 ]
