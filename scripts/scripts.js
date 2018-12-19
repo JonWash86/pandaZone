@@ -55,5 +55,5 @@ function shuffle(array){
 
 function initPage(){
   pandaId.fetchAll();
-  shuffle(allIds);
+  shuffle(pandaId.all);
 }

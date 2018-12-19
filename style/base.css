@@ -17,6 +17,11 @@ h1{
   color: #3A1712;
   border-radius: 25px;
   font-family: 'Copse', serif;
+  outline:none;
+}
+
+#pandaButton:active{
+  transform: translateY(4px);
 }
 
 #wrapper {
