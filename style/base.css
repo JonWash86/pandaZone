@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Copse|Roboto');
+
+body {
+  text-align: center;
+  background-color: #8BC4B8;
+}
+
+h1{
+  font-family: 'Copse', serif;
+  font-size: 48px;
+}
+
+#pandaButton {
+  border: none;
+  background-color: #DDE392;
+  font-size: 32px;
+  color: #3A1712;
+  border-radius: 25px;
+  font-family: 'Copse', serif;
+  outline:none;
+}
+
+#pandaButton:active{
+  transform: translateY(4px);
+}
+
+#wrapper {
+  /* display: inline-block; */
+  position: relative;
+}
+
+#underlay{
+  position: absolute;
+  background-color: white;
+  height: 440px;
+  width: 690px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  z-index: -1;
+  border-radius: 25px;
+}
+
+#player {
+}

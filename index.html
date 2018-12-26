@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel='stylesheet' href='css/base.css'>
+  <link rel='stylesheet' href='style/base.css'>
   <h1>Welcome to the Panda Zone!</h1>
 </head>
 <body>
-  <button type='button'>Show me some Pandas!</button>
-  <script type='text/javascript' src='js/scripts.js'></script>
+  <div id='wrapper'>
+    <div id='underlay'></div>
+    <div id='player'></div><br>
+    <button type='button' id='pandaButton'>Show Me Some Pandas!</button>
+  </div>
+  <script type='text/javascript' src='scripts/jquery-3.3.1.min.js'></script>
+  <script type='text/javascript' src='scripts/ids.js'></script>
+  <script type='text/javascript' src='scripts/scripts.js'></script>
+  <script type='text/javascript'>initPage()</script>
+
 </body>
 </html>
