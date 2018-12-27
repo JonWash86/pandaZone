@@ -1,5 +1,4 @@
 var videoIds = [
-  "HcMFJ4txdzQ",
   "YzVwrvbz_XA",
   "ZipGq3So7PY",
   "5Lh47WtOJeY",
@@ -11,8 +10,9 @@ var videoIds = [
 var clicks = 0;
 
 $("#pandaButton").on('click', function() {
+  clicks++;
     player.loadVideoById(videoIds[clicks]);
-    clicks++;
+    console.log(videoIds[clicks]);
 })
 
 var tag = document.createElement('script');
