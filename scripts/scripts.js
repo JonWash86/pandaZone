@@ -9,17 +9,25 @@ var videoIds = [
 
 var clicks = 0;
 
+// This code loads the IFrame Player API code asynchronously.
+$("#firstButton").on('click', function(){
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  $("#firstButton").hide();
+  $("#pandaButton").show();
+
+})
+
 $("#pandaButton").on('click', function() {
   clicks++;
     player.loadVideoById(videoIds[clicks]);
     console.log(videoIds[clicks]);
 })
 
-var tag = document.createElement('script');
-tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
+//This function creates an <iframe> (and YouTube player) after the API code downloads.
 var player;
 function onYouTubeIframeAPIReady(){
   player = new YT.Player('player',{
@@ -31,23 +39,25 @@ function onYouTubeIframeAPIReady(){
     },
     events:{
       'onReady': onPlayerReady,
-      'onStateChange': onPlayerStateChange
+      // 'onStateChange': onPlayerStateChange
     }
   });
 }
 
+
+//The API will call this function when the video player is ready.
 function onPlayerReady(event){
   event.target.playVideo();
 }
 
 var done = false;
-function onPlayerStateChange(event){
-  if(event.data == YT.playerState.PLAYING && !done){
-    setTimeout(stopVideo, 6000);
-    done = true;
-  }
-}
-
+// function onPlayerStateChange(event){
+//   if(event.data == YT.playerState.PLAYING && !done){
+//     setTimeout(stopVideo, 6000);
+//     done = true;
+//   }
+// }
+//
 function stopVideo(){
   player.stopVideo();
 }
