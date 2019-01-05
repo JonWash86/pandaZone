@@ -16,8 +16,6 @@ $("#firstButton").on('click', function(){
   var firstScriptTag = document.getElementsByTagName('script')[0];
   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
   $("#firstButton").hide();
-  $("#pandaButton").show();
-
 })
 
 $("#pandaButton").on('click', function() {
@@ -30,6 +28,8 @@ $("#pandaButton").on('click', function() {
 //This function creates an <iframe> (and YouTube player) after the API code downloads.
 var player;
 function onYouTubeIframeAPIReady(){
+  $("#underlay").fadeIn();
+  $("#pandaButton").fadeIn();
   player = new YT.Player('player',{
     height:'390',
     width:'640',

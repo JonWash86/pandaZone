@@ -10,8 +10,19 @@ h1{
   font-size: 48px;
 }
 
-#pandaButton {
+#firstButton{
+  margin-top: 100px;
+  border-style: solid;
+  border-width: 10px;
+  border-color: white;
+}
+
+#pandaButton{
+  display:none;
   border: none;
+}
+
+#pandaButton, #firstButton {
   background-color: #DDE392;
   font-size: 32px;
   color: #3A1712;
@@ -20,11 +31,11 @@ h1{
   outline:none;
 }
 
-#pandaButton:active{
+#pandaButton:active, #firstButton:active{
   transform: translateY(4px);
 }
 
-#pandaButton:hover{
+#pandaButton:hover, #firstButton:hover{
   cursor: pointer;
 	background-color: #949B35;
 }
@@ -35,6 +46,7 @@ h1{
 }
 
 #underlay{
+  display:none;
   position: absolute;
   background-color: white;
   height: 440px;
