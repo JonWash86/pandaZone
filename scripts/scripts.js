@@ -4,7 +4,9 @@ var videoIds = [
   "5Lh47WtOJeY",
   "y6GaPkkGZGw",
   "VTz5MtxrDTA",
-  "iVXtm-S2GbI"
+  "iVXtm-S2GbI",
+  "fYF1tIPjcAc",
+  "DSehQsYU9h4"
 ];
 
 var clicks = 0;
