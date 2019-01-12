@@ -1,4 +1,5 @@
 var videoIds = [
+  "DSehQsYU9h4",
   "YzVwrvbz_XA",
   "ZipGq3So7PY",
   "5Lh47WtOJeY",
@@ -6,7 +7,14 @@ var videoIds = [
   "VTz5MtxrDTA",
   "iVXtm-S2GbI",
   "fYF1tIPjcAc",
-  "DSehQsYU9h4"
+  "c1cG5DlLsLE",
+  "3esjoo4NoGQ",
+  "QWCbRTBRIQM",
+  "W4RE30l8zDY",
+  "kOH27QkTVv4",
+  "KKBQEDMiBJE",
+  "GnaSNsk-M0c",
+  "JbdzVlZ3nWQ"
 ];
 
 var clicks = 0;
@@ -24,6 +32,11 @@ $("#pandaButton").on('click', function() {
   clicks++;
     player.loadVideoById(videoIds[clicks]);
     console.log(videoIds[clicks]);
+    if (clicks >= (videoIds.length - 1)){
+      clicks = 0;
+      shuffle(videoIds);
+    }
+    console.log(clicks)
 })
 
 
